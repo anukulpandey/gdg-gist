@@ -27,3 +27,28 @@ const { disconnect } = useDisconnect();
   <button onClick={disconnect as any}>[DISCONNECT]</button>
 </div>
 ```
+
+read from contract
+
+```
+import { readContract } from "@wagmi/core"
+```
+
+```
+const data = await readContract(config,{
+  address:Greeter.address as `0x${string}`,
+  abi:Greeter.abi,
+  functionName:"getGreeting"
+});
+```
+
+write to contract
+
+```
+import { readContract } from "@wagmi/core"
+```
+
+```
+await writeContract(config,{address:Greeter.address as `0x${string}`,abi:Greeter.abi,functionName:"setGreeting",args:[text]});
+```
+```
