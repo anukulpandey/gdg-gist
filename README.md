@@ -15,3 +15,9 @@ import { injected } from "wagmi/connectors"
   {isConnected?`Connected to ${address}`:      <button onClick={()=>connect({connector:injected()})}>connect button</button>}
 </div>
 ```
+
+disconnect from mm
+
+```
+const { disconnect } = useDisconnect();
+```
