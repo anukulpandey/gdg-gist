@@ -21,3 +21,9 @@ disconnect from mm
 ```
 const { disconnect } = useDisconnect();
 ```
+
+```
+<div>
+  <button onClick={disconnect as any}>[DISCONNECT]</button>
+</div>
+```
