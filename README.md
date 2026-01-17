@@ -51,4 +51,3 @@ import { readContract } from "@wagmi/core"
 ```
 await writeContract(config,{address:Greeter.address as `0x${string}`,abi:Greeter.abi,functionName:"setGreeting",args:[text]});
 ```
-```
